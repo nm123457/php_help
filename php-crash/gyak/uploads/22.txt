@@ -1,0 +1,21 @@
+FRONTEND TO DO:
+-esemény törlés gomb a részletes nézeten
+-naptár nézet leugró szűrővel
+-profil oldal átszerkesztése
+-css átszínezése
+-Fix error message showing up when refersh endpoint intercepts create new event
+
+
+-recolor css
+-böngésző ikon megváltoztatása react logóról valami másra
+-make sure all buttons redirect properly
+
+
+
+ADD LAST_MODIFIED_BY_ID TO EVENTS TABLE
+NEW TABLE: MODIFICATIONS
+	-modification_id
+	-event_id (event that was modified)
+	-date of modifiaction
+	-who modified it
+	-old data
