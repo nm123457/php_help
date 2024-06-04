@@ -1,0 +1,9 @@
+admin oldal:
+	gomb - chart összegző oldal
+	gomb - csv adatbázisba oldal
+	gombok - szűrés a táblázatban
+logger funkció
+bejelentkezések tárolása az adatbázisban, napi 3 bejelentkezés
+max napi 3 feladat létrehozása felhasználóként
+Visszalépő gombok az oldalakra navigáció segítéséhez
+feketelistás szavak amiket nem enged betenni az adatbázisba a feladat létrehozáskor

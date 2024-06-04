@@ -1,0 +1,17 @@
+Rövid összefoglalás az első hat hét munkájáról a backend szerveren:
+-A backend egy REST architektúrájú API szerver
+-Ehhez JavaScript, ezen belül Node.js lett használva
+-Az első 6 hét folyamán használt Node.js csomagok listája:
+    -express (webalkalmazás keretrendszer REST API-ok készítéséhez)
+    -jsonwebtoken (tokenek hassználatához kell)
+    -cookie-parser (cookie-k használatához kell)
+    -bcrypt (titkosításhoz, pl. hash-eléshez kell)
+    -mysql (MySQL adatbázissal való interakcióhoz kell)
+    -fs (helyi fájlrendszerből való kiolvasáshoz kell)
+-Először beolvassa egy fájlból az adatbázishoz való csatlakozáshoz az adatokat és a titkos kulcsot
+-Megpróbál csatlakozni az adatbázishoz, ha nem sikerül, hibát dob
+-fogad post típusú HTTP kéréseket a következő végpontokon:
+	- /login (bejelentkezéseket kezeli, felhasználónevet és jelszavat vár)
+	- /logout (kijelentkezést kezeli)
+	- /refreshtoken  (ha lejárna az access token akkor ez a végpont generál egy új access tokent és elküldi a böngészőnek)
+- van egy authenticateToken nevű middleware függvény, ami ellenörzni, hogy van-e még nem lejárt access token. Ha van, akkor továbbenged, ha nincs, akkor megtagadja a hozzáférést
